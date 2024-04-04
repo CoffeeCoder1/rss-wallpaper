@@ -2,12 +2,16 @@
 name = "rss-wallpaper"
 version = "0.1.0"
 edition = "2021"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+license = "GPL-3.0-or-later"
+description = "Change your wallpaper to the latest item in an RSS feed"
+repository = "https://github.com/CoffeeCoder1/rss-wallpaper"
+readme = "README.md"
+keywords = ["rss", "feed", "desktop", "wallpaper", "background"]
+categories = ["command-line-utilities"]
 
 [dependencies]
 clap = { version = "4.5.4", features = ["derive"] }
 reqwest = "0.12.2"
 rss = "2.0.7"
-tokio = { version = "1.37.0", features = [ "full" ] }
-wallpaper = { version = "3.2.0", features = [ "from_url" ] }
+tokio = { version = "1.37.0", features = ["full"] }
+wallpaper = { version = "3.2.0", features = ["from_url"] }
